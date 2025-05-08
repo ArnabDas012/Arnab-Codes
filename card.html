@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Room Cards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+  <!-- Optional: Add Inter Font (used in image) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#f9fcff] flex flex-col items-center justify-center min-h-screen px-4">
+
+  <!-- Card Group -->
+  <div class="flex flex-col sm:flex-row gap-6 items-center justify-center">
+    
+    <!-- All Rooms Card -->
+    <div class="w-[200px] h-[200px] bg-white rounded-[24px] shadow-[0_12px_24px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center space-y-3">
+      <div class="bg-gradient-to-b from-[#5ff195] to-[#37c86f] text-white text-[22px] font-bold rounded-[12px] px-5 py-1.5">
+        50
+      </div>
+      <div class="text-[#2db95c] text-[18px] font-medium text-center">
+        All Rooms
+      </div>
+    </div>
+
+    <!-- Available Rooms Card -->
+    <div class="w-[200px] h-[200px] bg-white rounded-[24px] shadow-[0_12px_24px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center space-y-3">
+      <div class="bg-gradient-to-b from-[#77bfff] to-[#3d8bff] text-white text-[22px] font-bold rounded-[12px] px-5 py-1.5">
+        30
+      </div>
+      <div class="text-[#3d8bff] text-[18px] font-medium text-center leading-tight">
+        Available<br/>Rooms
+      </div>
+    </div>
+
+    <!-- Booked Rooms Card -->
+    <div class="w-[200px] h-[200px] bg-white rounded-[24px] shadow-[0_12px_24px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center space-y-3">
+      <div class="bg-gradient-to-b from-[#fbc979] to-[#f4a024] text-white text-[22px] font-bold rounded-[12px] px-5 py-1.5">
+        15
+      </div>
+      <div class="text-[#f4a024] text-[18px] font-medium text-center leading-tight">
+        Booked<br/>Rooms
+      </div>
+    </div>
+  </div>
+
+  <!-- Dot Pagination -->
+  <div class="flex mt-6 space-x-2">
+    <div class="w-[10px] h-[10px] bg-[#202020] rounded-full"></div>
+    <div class="w-[10px] h-[10px] bg-[#d3d3d3] rounded-full"></div>
+    <div class="w-[10px] h-[10px] bg-[#d3d3d3] rounded-full"></div>
+  </div>
+
+</body>
+</html>
